@@ -14,4 +14,4 @@
 
 include device/sony/kitakami/BoardConfig.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := D6553
+TARGET_BOOTLOADER_BOARD_NAME := E6553
