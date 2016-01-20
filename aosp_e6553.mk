@@ -40,6 +40,10 @@ PRODUCT_COPY_FILES += \
     device/sony/ivy/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/ivy/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# NFC config
+PRODUCT_PACKAGES += nfc_nci.ivy
+ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=ivy
+
 PRODUCT_NAME := aosp_e6553
 PRODUCT_DEVICE := ivy
 PRODUCT_MODEL := Xperia Z3+ (AOSP)
