@@ -38,6 +38,20 @@ PRODUCT_COPY_FILES += \
     device/sony/ivy/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     device/sony/ivy/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.ivy \
+    init.ivy \
+    ueventd.ivy
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.ivy
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.ivy
+
 PRODUCT_NAME := aosp_e6553
 PRODUCT_DEVICE := ivy
 PRODUCT_MODEL := Xperia Z3+ (AOSP)
