@@ -17,16 +17,10 @@ TARGET_KERNEL_CONFIG := aosp_kitakami_ivy_defconfig
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/ivy/overlay
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
-$(call inherit-product, device/sony/common/common.mk)
 $(call inherit-product, device/sony/kitakami/device.mk)
 $(call inherit-product, vendor/sony/ivy/ivy-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-$(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
-$(call inherit-product-if-exists, prebuilts/chromium/webview_prebuilt.mk)
-$(call inherit-product-if-exists, vendor/google/products/gms.mk)
 
 PRODUCT_COPY_FILES += \
     device/sony/ivy/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
