@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.ivy
 
+# NFC config
+PRODUCT_PACKAGES += \
+    nfc_nci.pn54x.default
+
 PRODUCT_NAME := aosp_e6553
 PRODUCT_DEVICE := ivy
 PRODUCT_MODEL := Xperia Z3+ (AOSP)
