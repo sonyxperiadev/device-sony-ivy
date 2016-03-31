@@ -18,4 +18,6 @@ TARGET_BOOTLOADER_BOARD_NAME := E6553
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=ivy
 
+WIFI_BUS := PCIE
+
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
