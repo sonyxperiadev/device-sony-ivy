@@ -60,7 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/kitakami/platform.mk)
-$(call inherit-product, vendor/sony/ivy/ivy-vendor.mk)
+$(call inherit-product, vendor/sony/kitakami-ivy/ivy-vendor.mk)
 
 # copy wlan firmware
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4356/device-bcm.mk)
