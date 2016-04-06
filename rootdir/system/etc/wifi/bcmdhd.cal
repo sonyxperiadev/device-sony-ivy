@@ -1,6 +1,6 @@
 # Copyright (C) 2014 Sony Mobile Communications Inc.
 
-NVRAMRev=$Rev: 492111 $
+NVRAMRev=$06764604$
 sromrev=11
 boardrev=0x1101
 ## boardtype is subject to change
@@ -92,10 +92,10 @@ pa2ga3=-154,3985,-568
 #pa5ga2=-153,3951,-562,-156,4006,-560,-152,4080,-566,-153,3850,-546
 #pa5ga3=-165,3846,-551,-160,4023,-566,-157,4138,-574,-167,3953,-552
 
-maxp2ga0=76
-maxp5ga0=74,74,74,74
-maxp2ga1=76
-maxp5ga1=74,74,74,74
+maxp2ga0=108
+maxp5ga0=106,106,106,106
+maxp2ga1=108
+maxp5ga1=106,106,106,106
 subband5gver=0x4
 
 pdoffsetcckma0=0x4
@@ -106,21 +106,21 @@ pdoffset80ma0=0x0000
 pdoffset40ma1=0x0000
 pdoffset80ma1=0x0000
 
-cckbw202gpo=0x0000
-cckbw20ul2gpo=0x0000
-mcsbw202gpo=0xaaa62222
-mcsbw402gpo=0xaaa62222
-dot11agofdmhrbw202gpo=0x6666
-ofdmlrbw202gpo=0x0042
-mcsbw205glpo=0x88866444
-mcsbw405glpo=0xcca86644
-mcsbw805glpo=0xcaaaaaaa
-mcsbw205gmpo=0x88866440
-mcsbw405gmpo=0xcca86644
-mcsbw805gmpo=0xcaaaaaaa
-mcsbw205ghpo=0x88866440
-mcsbw405ghpo=0xcca86644
-mcsbw805ghpo=0xcaaaaaaa
+cckbw202gpo=0x0000,0x1111
+cckbw20ul2gpo=0x0000,0x0000
+mcsbw202gpo=0xaaaaa862,0x11111111
+mcsbw402gpo=0xaaaaa862,0x11111111
+dot11agofdmhrbw202gpo=0x6666,0x1111
+ofdmlrbw202gpo=0x0042,0x0011
+mcsbw205glpo=0x88866444,0x11111111
+mcsbw405glpo=0xcca86644,0x11111111
+mcsbw805glpo=0xcaaaaaaa,0x11111111
+mcsbw205gmpo=0x88866440,0x11111111
+mcsbw405gmpo=0xcca86644,0x11111111
+mcsbw805gmpo=0xcaaaaaaa,0x11111111
+mcsbw205ghpo=0x88866440,0x11111111
+mcsbw405ghpo=0xcca86644,0x11111111
+mcsbw805ghpo=0xcaaaaaaa,0x11111111
 
 mcslr5glpo=0x0000
 mcslr5gmpo=0x0000
@@ -203,3 +203,4 @@ ed_thresh2g=-65
 ed_thresh5g=-65
 
 btc_mode=1
+host_wake_opt=0
