@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES := \
     device/sony/ivy/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/ivy/rootdir/system/etc/BCM4356.hcd:system/etc/firmware/BCM43xx.hcd \
     device/sony/ivy/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/sony/ivy/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+    device/sony/ivy/rootdir/system/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     device/sony/ivy/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/ivy/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
     device/sony/ivy/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
