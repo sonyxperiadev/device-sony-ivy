@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.ivy
 
+# SimToolKit
+PRODUCT_PACKAGES += \
+    Stk
+
 PRODUCT_AAPT_CONFIG := large
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
