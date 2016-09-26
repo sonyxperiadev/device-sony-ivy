@@ -15,6 +15,12 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/ivy/aosp_e6553.mk)
 
+# DualSim
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.multisim.config=dsds \
+    persist.radio.multisim.config=dsds \
+    ro.telephony.default_network=9,1
+
 PRODUCT_NAME := aosp_e6533
 PRODUCT_DEVICE := ivy
 PRODUCT_MODEL := Xperia Z3+ Dual (AOSP)
