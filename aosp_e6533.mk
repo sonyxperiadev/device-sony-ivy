@@ -1,4 +1,3 @@
-#
 # Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-add_lunch_combo aosp_e6553-userdebug
-add_lunch_combo aosp_e6533-userdebug
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/ivy/aosp_e6553.mk)
+
+PRODUCT_NAME := aosp_e6533
+PRODUCT_DEVICE := ivy
+PRODUCT_MODEL := Xperia Z3+ Dual (AOSP)
+PRODUCT_BRAND := Sony
+PRODUCT_MANUFACTURER := Sony
